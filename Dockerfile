@@ -6,6 +6,6 @@ RUN chmod a+r /srv/minecraft_server.jar
 
 ADD run.sh /run.sh
 
-EXPOSE 25565
+EXPOSE 25565 25575
 CMD /run.sh
 
