@@ -1,0 +1,7 @@
+version: '2'
+services:
+  minecraft:
+    image: minecraft
+    build: .
+    ports:
+      - 25565:25565
