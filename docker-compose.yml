@@ -1,7 +1,9 @@
-version: '2'
+version: '2.1'
 services:
   minecraft:
     image: minecraft
     build: .
+    volumes:
+      - ./data:/home/minecraft
     ports:
       - 25565:25565
