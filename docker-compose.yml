@@ -3,8 +3,7 @@ services:
   minecraft:
     # http://minecraft.gamepedia.com/Server/Requirements/Dedicated#Console
     mem_limit: 1g
-    image: minecraft:1.12
-    build: .
+    image: felix/minecraft:1.12
     volumes:
       - ./data:/home/minecraft
     ports:
