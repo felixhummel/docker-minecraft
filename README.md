@@ -1,8 +1,12 @@
-Getting Started
-===============
-Create directory for server data and accept the EULA at
-https://account.mojang.com/documents/minecraft_eula:
+The commands below accept
+[Mojang's EULA](https://account.mojang.com/documents/minecraft_eula).
 
-    mkdir -p data/
-    echo 'eula=true' > data/eula.txt
+# Running the Server
+```
+git clone https://github.com/felixhummel/docker-minecraft.git
+cd docker-minecraft
+echo 'eula=true' > data/eula.txt
+docker-compose up -d
+docker-compose logs --tail=60 -f
+```
 
